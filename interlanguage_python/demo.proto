@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package intralanguage;
+
+service Demo {
+  rpc Ping (Greetings) returns (Acknowledgement) {}
+}
+
+message Greetings {
+  string greet_message = 1;
+}
+
+message Acknowledgement {
+  string ackw_message = 1;
+}
